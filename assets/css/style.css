@@ -5,14 +5,6 @@
   --header: rgb(205, 205, 242);
   --content: black;
   --font: 'proxima nova';
-  /* You can use it with any value that is repeated throughout the sheet */
-  --border-radius: 50px;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
@@ -24,32 +16,32 @@ header {
     font-family: var(--font);
     background-color: var(--header);
     color: var(--dark);
+    text-align: center;
 }
 
 header h1 {
-    display: inline-block;
+    display: center;
     font-size: 48px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
-/* made changes to match nav section in html */
+/* navigation bar */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float: center;
     font-family: var(--font);
     font-size: 20px;
+    text-align: center;
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    text-align: right;
+    
 }
 
 nav {
@@ -64,17 +56,12 @@ nav a {
   text-align: center;
 }
 
-a {
-    color: #862e2e;
-    text-decoration: none;
-}
-
 p {
     font-size: 16px;
 }
 
 .hero {
-    height: 800px;
+    height: 400px;
     width: 50%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -91,44 +78,25 @@ p {
     float: right;
     margin-left: 25px;
 }
-/* updated to match main in html */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* changed div to aside for sidebar */
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: var(--font);
-    background-color: var(--header);
-}  
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa1a;
+    margin: 20px;
+  }
 
-/* combined code for benefits sidebar*/
-aside {
-    margin-bottom: 32px;
-    color: var(--dark);
-}
 
-aside h3 {
-    margin-bottom: 0px;
-    text-align: center;
-}
-
-aside img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* created one class for the service section */
-.service-section {
+/* section for all the info about me in the main body */
+.my-info {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -138,18 +106,26 @@ aside img {
 }
 
 /* sub class for images in the service section */
-.service-section img {
+.my-info img {
     max-height: 200px;
 }
 
 /* sub class for h2 in the service sections */
-.service-section h2 {
+.my-info h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+.my-info contact-info {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
 /* updated to match footer in html */
 footer {
-    padding: 30px;
+    padding: 5px;
     clear: both;
     font-family: var(--font);
     text-align: center;
@@ -157,5 +133,5 @@ footer {
 }
 
 footer h2 {
-    font-size: 20px;
+    font-size: 30px;
 }
