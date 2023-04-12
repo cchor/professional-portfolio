@@ -1,8 +1,8 @@
 :root {
-  --light: #f7f7f7;
+  --light: #dad6ec;
   --dark: #0616a7;
   --accent: #907cf5;
-  --header: rgb(205, 205, 242);
+  --header: rgb(231, 231, 244);
   --content: black;
   --font: 'proxima nova';
 }
@@ -26,18 +26,14 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    font-family: var(--font);
     background-color: var(--header);
     color: var(--dark);
     text-align: center;
 }
 
-header h1 {
-    display: center;
-    font-size: 48px;
-    margin-bottom: 10px;
-}
 
 header nav {
     padding-top: 15px;
@@ -58,53 +54,78 @@ header nav ul li {
     
 }
 
-nav {
-  display: flex;
-  background-color: var(--accent);
-}
-
-nav a {
-  color: var(--light);
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+h1 {  
+    font-size: 48px;
 }
 
 h2 {
-    margin: 0;
+    font-size: 30px;
+
 }
 
 p {
     font-size: 16px;
 }
 
+nav {
+  display: flex;
+  background-color: var(--accent);
+}
+
+nav ul {
+    display: flex;
+}
+
+/* why is my text not being pushed to the right in the nav */
+nav a {
+  color: var(--light);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: right;  
+}
+
 main {
     width: 75%;
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 section {
     flex: 0 0 400px;
+    width: 50%;
     background-color: #fff;
     padding: 20px;
   }
 
-.box {
-    
-    border-radius: var(--border-radius);
+  /* trying to get the cards to line up in a row
+   */
+.card {  
+    flex: 1;
+    flex-direction: row;
     padding: 10px;
-    flex: 0 0 30px;
-    margin: 250px;
-    
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;    
+}
+
+  .card-header {
+    position: relative;
+    margin-top: -20px;
   }
 
 .intro {
     background-color: var(--light);
     color: var(--dark);
+    font-size: 30px;
+    
 }
 
+.intro p {
+    font-size: 20px;
+}
 /* section for all the info about me in the main body */
 .my-info {
     margin-bottom: 20px;
@@ -122,6 +143,7 @@ img {
 
 
 footer {
+    margin-top: auto;
     padding: 5px;
     clear: both;
     font-family: var(--font);
