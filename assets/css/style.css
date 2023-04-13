@@ -53,6 +53,10 @@ header nav ul li {
     
 }
 
+header h1 {
+    font-size: 50px;
+}
+
 p {
     font-size: 16px;
 }
@@ -87,15 +91,12 @@ main {
 
 /* about me section */
 .title-section{
-    display:flex;
-    /* margin:%;
-    padding: 5%;
-    justify-content: space-around;
-    height: auto;  
-    text-align: center;  
-    padding: 15px;     */
-    width:90px;
-    height:90px
+    display: block;
+    margin-top: 20px;
+    width:15%;
+    height:15%;
+    text-align: center;
+    padding: 1%;
 }
 
 .project-section{
@@ -106,6 +107,9 @@ main {
 
 }
 
+h2 {
+    font-size: 30px;
+}
  
 .card {  
     padding: 1%;
@@ -114,12 +118,14 @@ main {
     border-style: solid;
     border-width: 5px;    
     width:35%;
+    box-shadow: 10px 10px 10px var(--dark);
    
 }
 
 .card:hover {
-color: rgb(119, 12, 145);
-
+    color: rgb(119, 12, 145);
+    border-width: 8px;
+    
 }
 
 .card img{
@@ -136,17 +142,6 @@ color: rgb(119, 12, 145);
     justify-content: space-evenly;
     flex-wrap: wrap;
  
-}
-
-.intro {
-    background-color: var(--light);
-    color: var(--dark);
-    font-size: 30px;
-    
-}
-
-.intro p {
-    font-size: 20px;
 }
 
 /* section for all the info about me in the main body */
