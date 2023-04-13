@@ -67,7 +67,6 @@ nav ul {
     display: flex;
 }
 
-/* why is my text not being pushed to the right in the nav */
 nav a {
   color: var(--light);
   padding: 14px 20px;
@@ -107,10 +106,10 @@ main {
 
 }
 
-  /* trying to get the cards to line up in a row
-   */
+ 
 .card {  
     padding: 1%;
+    margin: 20px;
     text-align: center;
     border-style: solid;
     border-width: 5px;    
@@ -119,7 +118,8 @@ main {
 }
 
 .card:hover {
-color: pink;
+color: rgb(119, 12, 145);
+
 }
 
 .card img{
@@ -170,10 +170,15 @@ footer {
     background-color: var(--header);
 }
 
-footer h2 {
-    font-size: 20px;
+footer a {
+    font-size: 20px; 
+    margin: 5px;
 }
 
+footer h2 {
+    font-size: 30px;
+    color: var(--dark);
+}
 
 @media (max-width: 760px) {
     #project-work {
