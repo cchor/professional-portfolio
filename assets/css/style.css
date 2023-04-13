@@ -21,7 +21,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
     justify-content: flex-start;
 }
 
@@ -54,15 +53,6 @@ header nav ul li {
     
 }
 
-/* h1 {  
-    font-size: 48px;
-} */
-
-/* h2 {
-    font-size: 30px;
-
-} */
-
 p {
     font-size: 16px;
 }
@@ -86,52 +76,67 @@ nav a {
 }
 
 nav ul li a:hover {
-    color: yellow;
-    font-size: 40px;;
+    color: lightgreen;
+    font-size: 25px;
 }
 
 main {
     width: 90%;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
     background-color: var(--light);
     color: var(--dark);
 }
+
+/* about me section */
 .title-section{
+    display:flex;
+    /* margin:%;
+    padding: 5%;
+    justify-content: space-around;
+    height: auto;  
+    text-align: center;  
+    padding: 15px;     */
+    width:90px;
+    height:90px
+}
+
+.project-section{
     display:flex;
     margin:5%;
     padding: 5%;
     justify-content: space-around;
-}
 
+}
 
   /* trying to get the cards to line up in a row
    */
 .card {  
-    /* flex: 1;
-    flex-direction: row; */
     padding: 1%;
     text-align: center;
     border-style: solid;
-    border-width: 1px;    
+    border-width: 5px;    
     width:35%;
    
 }
+
+.card:hover {
+color: pink;
+}
+
 .card img{
     width: 95%;
-}
-#project-work {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
- 
 }
 
   .card-header {
     position: relative;
     margin-top: -20px;
   }
+
+  #project-work {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
+}
 
 .intro {
     background-color: var(--light);
@@ -146,9 +151,6 @@ main {
 
 /* section for all the info about me in the main body */
 .my-info {
-    /* margin-bottom: 20px;
-    padding: 50px;
-    height: 300px; */
     font-family: var(--font);
     background-color: var(--header);
     color: var(--dark);
@@ -175,7 +177,6 @@ footer h2 {
 
 @media (max-width: 760px) {
     #project-work {
-      /* background-color: lightgreen; */
       display: block;
       padding: 2%;
       margin: 2%;
