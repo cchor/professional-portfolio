@@ -1,6 +1,6 @@
 # professional-portfolio
 
-##Professional Portfolio
+## Professional Portfolio
 
 This project is to create a portfolio to be able to build upon for future use. Having a good portfolio showcases your skills to potential employeers. 
 

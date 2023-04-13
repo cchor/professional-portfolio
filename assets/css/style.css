@@ -10,10 +10,8 @@
  *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
-
-
 
 body {
     background-color: var(--light);
@@ -24,6 +22,7 @@ body {
     justify-content: flex-start;
 }
 
+/*  */
 header {
     display: flex;
     flex-direction: column;
@@ -55,10 +54,6 @@ header nav ul li {
 
 header h1 {
     font-size: 50px;
-}
-
-p {
-    font-size: 16px;
 }
 
 nav {
@@ -93,18 +88,32 @@ main {
 .title-section{
     display: block;
     margin-top: 20px;
-    width:15%;
-    height:15%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 1%;
 }
 
+.title-section img {
+    height: 15%;
+    width: 15%;
+}
+
+.title-section p {
+    font-size: 20px;
+} 
+
 .project-section{
     display:flex;
-    margin:5%;
     padding: 5%;
     justify-content: space-around;
 
+}
+
+#project-work {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -135,27 +144,13 @@ h2 {
   .card-header {
     position: relative;
     margin-top: -20px;
-  }
-
-  #project-work {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
- 
 }
 
-/* section for all the info about me in the main body */
-.my-info {
-    font-family: var(--font);
-    background-color: var(--header);
-    color: var(--dark);
-}
-
-/* for images in what i've learned section */
 img {
     width: 100%;
   }
 
+  /* formatting for footer section */
 footer {
     margin-top: auto;
     padding: 5px;
