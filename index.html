@@ -3,14 +3,14 @@
 
 <head>
     <title>Professional Portfolio</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header> 
+    <header>
         <h1>Professional Portfolio</h1>
         <nav>
             <ul>
@@ -18,7 +18,7 @@
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#what-ive-learned">What I've Learned</a>
+                    <a href="#project-work">What I've Learned</a>
                 </li>
                 <li>
                     <a href="#contact-info">Contact Info</a>
@@ -26,30 +26,37 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section id="about-me" class="intro">
+        <section id="about-me" class="title-section">
             <h2>About Me</h2>
             <p>
-                This is my first professional portfolio. Looking to add more skills to it as I learn. Take a look at what I've learned so far.
+                This is my first professional portfolio. Looking to add more skills to it as I learn. Take a look at
+                what I've learned so far.
             </p>
         </section>
-        <!-- adding card section to create boxes for projects  -->
-        <section id="what-ive-learned" class="my-info" class="code-card">
-            <img src="./assets/images/css snippet cheatsheet.png" alt="CSS Snippet Cheatsheet"  />
-            <h2>CSS Snippet Cheatsheet</h2>
-        </section>
-        <section id="what-ive-learned" class="my-info"class="card">
-            <a href="https://cchor.github.io/module-1-challenge/"><img src="./assets/images/horiseon 2.png" alt="Horiseon Web Page"  />
-            <h2>Horiseon</h2>
-            
+        <section class="title-section">
+            <h2>Projects</h2>
+            <!-- adding card section to create boxes for projects  -->
+
+            <section id="project-work">
+                <section class="my-info card">
+                    <img src="./assets/images/css snippet cheatsheet.png" alt="CSS Snippet Cheatsheet" />
+                    <h2>CSS Snippet Cheatsheet</h2>
+                </section>
+                <section class="my-info card">
+                    <a href="https://cchor.github.io/module-1-challenge/"><img src="./assets/images/horiseon 2.png"
+                            alt="Horiseon Web Page" />
+                        <h2>Horiseon</h2>
+                </section>
+            </section>
         </section>
     </main>
 
     <footer id="contact-info">
         <h2>Contact Info</h2>
-                <a href="https://www.linkedin.com/in/cathy-chorbeff"> LinkedIn</a>
-                <a href="https://github.com/cchor"> GitHub</a>
+        <a href="https://www.linkedin.com/in/cathy-chorbeff"> LinkedIn</a>
+        <a href="https://github.com/cchor"> GitHub</a>
     </footer>
 </body>
 
