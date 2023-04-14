@@ -9,3 +9,6 @@ Creating this portfolio was an exercise in creating a responsive design that ada
 Note: link for CSS Cheatsheet is a placeholder. I missed that day and am still catching up
 
 
+https://cchor.github.io/professional-portfolio/
+
+<img src="./assets/images/professional portfolio finished page.png">
